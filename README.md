@@ -1,2 +1,1 @@
-# VirtualLoop2-Public
-VirtualLoop device and software documentation
+# VirtualLoop device and software documentation
