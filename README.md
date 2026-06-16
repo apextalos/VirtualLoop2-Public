@@ -1,4 +1,5 @@
 # VirtualLoop device and software documentation
 
-[Quick start guide](https://github.com/apextalos/VirtualLoop2/blob/main/Quick start guide.pdf)
+[Quick start guide](https://github.com/apextalos/VirtualLoop2-Public/blob/main/Quick_start_guide.pdf)
 
+[User guide (markdown)](https://github.com/apextalos/VirtualLoop2-Public/blob/main/User_guide.md)
