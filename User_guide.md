@@ -27,7 +27,7 @@ The VirtualLoop serves as a translator for various detection technologies to be 
 
 ### Technical Specification
 
-* Cortex-A76 (Armv8) SoC @ 2.4GHz
+* Cortex-A76 (Armv8) 2.4GHz
 * 2Gb RAM
 * 128Gb Removable flash (microSD)
 * 2 × USB 3.0 ports, supporting simultaneous 5Gbps operation
@@ -38,7 +38,7 @@ The VirtualLoop serves as a translator for various detection technologies to be 
 
 ### VIRTUALLOOP-2-RACK (COMING SOON)
 
-BIU Rack card mounted
+**Form:** BIU Rack card mounted
 
 **Power:** supplied by the BIU rack backplane at 12 VDC
 
@@ -48,7 +48,7 @@ BIU Rack card mounted
 
 ### VIRTUALLOOP-2-DIN
 
-DIN rail or shelf mounted
+**Form:** DIN rail or shelf mounted
 
 **Power:** supplied either by nominal 12-24VDC on the front (2 pos green connector), or Ethernet (RJ45) PoE 802.3af (consumes only ~1w)
 
@@ -56,23 +56,21 @@ DIN rail or shelf mounted
 
 **Relay Control (COMING SOON):** 8 ea of SPDT solid state relays (1 Form C)
 
-
 ## Interfaces<a name="Interfaces"></a>
 
 ### LEDs
-* **(Green) Power:** Solid on when the unit is powered
 
-* **(Green) Online:** Solid on when the unit is turned on
+**(Green) Power:** Solid on when the unit is powered
 
-* **(Orange) Active:** Blinks when the flash storage is in use
+**(Green) Online:** Solid on when the unit is turned on
 
-* **(Orange) Status:** Blinks at 1Hz when the system is operating normally.  Fast blinking indicates an error
+**(Orange) Active:** Blinks when the flash storage is in use
 
-* **(Yellow) SDLC:** Blinks during SDLC bus communication
+**(Orange) Status:** Blinks at 1Hz when the system is operating normally.  Fast blinking indicates an error
+
+**(Yellow) SDLC:** Blinks during SDLC bus communication
 
 ### OLED Screen
-
-<img height="157" alt="OLED" src="" />
 
 Tapping the button rotates the screen:
 
@@ -101,6 +99,8 @@ Tapping the button rotates the screen:
 
 1. --Relays-- 1-8
 
+IMG COMING SOON
+
 ### SDLC
 
 TS2 Port 1 Serves as BIU 1-4, each with 16 detectors.  The BIU assignments and Detector calls can be operated through both the Web Server "Detector" page and REST API.
@@ -119,15 +119,15 @@ Holding the reset button for 5 seconds (or longer) and releasing will factory re
 
 ## Web Server<a name="WebServer"></a>
 
-**Login page** - Requires username and password to access the unit
+**Login page** - Requires username and password to access the unit.  Login with "user" and "V1rtualL00p!"
 
 <img height="480" alt="login" style="border: 5px solid black;" src="https://github.com/user-attachments/assets/b605a9b7-e69b-4d07-9e78-8215b050b332" />
 
-**About page** - Reports version, internal voltage, device name, etc.
+**About page** - Reports location name, status, version, etc.
 
 <img height="480" alt="about" style="border: 5px solid black;" src="https://github.com/user-attachments/assets/f2229208-ab4c-4959-9951-93211392ec33" />
 
-**Network page** - Used to set the device IP through either DHCP or Static addressing
+**Network page** - Used to set the device IP through either "auto" (DHCP) or "static" addressing
 
 <img height="480" alt="network" style="border: 5px solid black;" src="https://github.com/user-attachments/assets/10bc5b5f-8d5c-4255-8b6c-dc676d00d21a" />
 
@@ -135,19 +135,19 @@ Holding the reset button for 5 seconds (or longer) and releasing will factory re
 
 <img height="480" alt="time" style="border: 5px solid black;" src="https://github.com/user-attachments/assets/e98ff891-b1ba-40dc-a5f9-4684384a6ef7" />
 
-**Detector selection page** - Allows the user to force a detector on or off through the UI.  Also reports the number of detector activation counts and provides the user a droplist of the load switch numbers for mapping in ATSPM data
+**Detector page** - Allows the user to force a detector on or off through the UI.  Also reports the number of detector activation counts.
 
 <img height="480" alt="detectors" style="border: 5px solid black;" src="https://github.com/user-attachments/assets/3f199a59-1876-4b64-8c1a-3bcfb813d9f2" />
 
-**Load switch status page** - Reports the current phase by identifying the color of the approaches
+**Load Switches page** - Reports the current phase by identifying the color of the approaches
 
 <img height="480" alt="loadswitches" style="border: 5px solid black;" src="https://github.com/user-attachments/assets/31ff10bf-8d86-48fd-9db5-60331e23cba6" />
 
-**Failsafe monitoring page** - The device can monitor upto 4 IP address and ports.  Typically these would be the camera detection devices.  If the connection is not accepted within the specified number of seconds and failure counts, the VirtualLoop will go into FAILSAFE mode and automatically hold calls on all detectors.
+**Failsafe page** - The device can monitor upto 4 IP address and ports.  Typically these would be the camera detection devices.  If the connection is not accepted within the specified number of seconds and failure counts, the VirtualLoop will go into FAILSAFE mode and automatically hold calls on all detectors.
 
 <img height="480" alt="failsafe" style="border: 5px solid black;" src="https://github.com/user-attachments/assets/561cbeab-a28a-4bbf-8412-a7c82e2f694b" />
 
-**Log page** - View logging data
+**Logs page** - View logging data
 
 <img height="480" alt="logs" style="border: 5px solid black;" src="https://github.com/user-attachments/assets/404e2b4d-42c0-4143-86d2-e7ff297f1d6c" />
 
@@ -163,12 +163,14 @@ The REST API supports integration with sensor systems through simple HTTP reques
 
 **Scripts page** - Generates the Bosch camera alarm task scripts for ease of use.
 
-1. Enter the IP address of the VirtualLoop device
-1. Fill out the table with the mappings of cameras and rules to BIUs and detectors
-1. Hit the "Generate" button and now you have each of the script blocks
+1. Enter the IP address of the VirtualLoop device, or pull from the Network page
+1. Enter the API token of the VirtualLoop device, or pull from the API page
+1. Fill out the table with the mappings of cameras and rules to detectors
 1. Paste accordingly into your camera's Alarm Task Editors
 
 <img height="480" alt="scripts" src="https://github.com/user-attachments/assets/7f5e185e-223d-43e1-aab4-1af646486d55" />
+
+Mappings coorelate the VCA rule number of the camera to a detector number of the controller.
 
 <img width="1235" alt="mappings" src="https://github.com/user-attachments/assets/dc0dad7b-f46c-40ca-8c7d-655c6e1b3928" />
 
@@ -184,17 +186,18 @@ The REST API supports integration with sensor systems through simple HTTP reques
     - [ ] Login to the unit's web interface using a browser
     - [ ] Set the proper address, subnet, and gateway IP for the network which allows communication to the sensors
 - [ ] Detector integration
-    - [ ] Plugin the SDLC interface cable
     - [ ] Use the VirtualLoop Web interface to enable the proper BIU #'s
+    - [ ] Plugin the SDLC interface cable
     - [ ] Verify communication with the Intersection Control Unit through LEDs and exiting failsafe mode
-    - [ ] Use the [Script Generator for Bosch Cameras](#Scripts) to generate VCA tasks based on the rule and detector mappings
+    - [ ] Use the Scripts page to generate VCA tasks based on the rule and detector mappings
     - [ ] Install scripts onto the cameras as directed by the tool
 - [ ] Additional Recommended Items
-    - [ ] On the System tab, set a unique intersection name or number
-    - [ ] Use the [Firmware upgrades](#Firmware) tool to install the latest firmware onto the device
+    - [ ] On the About page, set a unique intersection name or number
+    - [ ] Use the Firmware pagel to install the latest firmware onto the device
     - [ ] Add failsafe monitoring configs
     - [ ] Add time synchronization configs
     - [ ] Rotate through the device screens checking for any errors
+	- [ ] Check the log page for any errors
 
 ## Contact<a name="Contact"></a>
 
