@@ -99,7 +99,7 @@ Tapping the button rotates the screen:
 
 1. --Relays-- 1-8
 
-IMG COMING SOON
+IMAGE COMING SOON
 
 ### SDLC
 
@@ -111,7 +111,7 @@ TS2 Port 1 Serves as BIU 1-4, each with 16 detectors.  The BIU assignments and D
 
 Relays are numbered 1 through 8 with 1 closest to the front of the unit.  Each relay includes Common, Normally Open, and Normally Closed contacts.
 
-<img width="800" alt="Relay contacts" src="" />
+IMAGE COMING SOON
 
 ## Factory reset<a name="FactoryReset"></a>
 
@@ -121,45 +121,45 @@ Holding the reset button for 5 seconds (or longer) and releasing will factory re
 
 **Login page** - Requires username and password to access the unit.  Login with "user" and "V1rtualL00p!"
 
-<img height="480" alt="login" style="border: 5px solid black;" src="https://github.com/user-attachments/assets/b605a9b7-e69b-4d07-9e78-8215b050b332" />
+<kbd><img height="480" alt="login" src="https://github.com/user-attachments/assets/b605a9b7-e69b-4d07-9e78-8215b050b332" /></kbd>
 
 **About page** - Reports location name, status, version, etc.
 
-<img height="480" alt="about" style="border: 5px solid black;" src="https://github.com/user-attachments/assets/f2229208-ab4c-4959-9951-93211392ec33" />
+<kbd><img height="480" alt="about" src="https://github.com/user-attachments/assets/f2229208-ab4c-4959-9951-93211392ec33" /></kbd>
 
 **Network page** - Used to set the device IP through either "auto" (DHCP) or "static" addressing
 
-<img height="480" alt="network" style="border: 5px solid black;" src="https://github.com/user-attachments/assets/10bc5b5f-8d5c-4255-8b6c-dc676d00d21a" />
+<kbd><img height="480" alt="network" src="https://github.com/user-attachments/assets/10bc5b5f-8d5c-4255-8b6c-dc676d00d21a" /></kbd>
 
 **Time configuration page** - configure the time server address and check sync status
 
-<img height="480" alt="time" style="border: 5px solid black;" src="https://github.com/user-attachments/assets/e98ff891-b1ba-40dc-a5f9-4684384a6ef7" />
+<kbd><img height="480" alt="time" src="https://github.com/user-attachments/assets/e98ff891-b1ba-40dc-a5f9-4684384a6ef7" /></kbd>
 
 **Detector page** - Allows the user to force a detector on or off through the UI.  Also reports the number of detector activation counts.
 
-<img height="480" alt="detectors" style="border: 5px solid black;" src="https://github.com/user-attachments/assets/3f199a59-1876-4b64-8c1a-3bcfb813d9f2" />
+<kbd><img height="480" alt="detectors" src="https://github.com/user-attachments/assets/3f199a59-1876-4b64-8c1a-3bcfb813d9f2" /></kbd>
 
 **Load Switches page** - Reports the current phase by identifying the color of the approaches
 
-<img height="480" alt="loadswitches" style="border: 5px solid black;" src="https://github.com/user-attachments/assets/31ff10bf-8d86-48fd-9db5-60331e23cba6" />
+<kbd><img height="480" alt="loadswitches" src="https://github.com/user-attachments/assets/31ff10bf-8d86-48fd-9db5-60331e23cba6" /></kbd>
 
 **Failsafe page** - The device can monitor upto 4 IP address and ports.  Typically these would be the camera detection devices.  If the connection is not accepted within the specified number of seconds and failure counts, the VirtualLoop will go into FAILSAFE mode and automatically hold calls on all detectors.
 
-<img height="480" alt="failsafe" style="border: 5px solid black;" src="https://github.com/user-attachments/assets/561cbeab-a28a-4bbf-8412-a7c82e2f694b" />
+<kbd><img height="480" alt="failsafe" src="https://github.com/user-attachments/assets/561cbeab-a28a-4bbf-8412-a7c82e2f694b" /></kbd>
 
 **Logs page** - View logging data
 
-<img height="480" alt="logs" style="border: 5px solid black;" src="https://github.com/user-attachments/assets/404e2b4d-42c0-4143-86d2-e7ff297f1d6c" />
+<kbd><img height="480" alt="logs" src="https://github.com/user-attachments/assets/404e2b4d-42c0-4143-86d2-e7ff297f1d6c" /></kbd>
 
 **Firmware page** - Remote upgrades
 
-<img height="480" alt="firmware" style="border: 5px solid black;" src="https://github.com/user-attachments/assets/21e4c385-f771-4217-9fea-7debd6284b93" />
+<kbd><img height="480" alt="firmware" src="https://github.com/user-attachments/assets/21e4c385-f771-4217-9fea-7debd6284b93" /></kbd>
 
 **API page** - Manage API tokens
 
 The REST API supports integration with sensor systems through simple HTTP requests.  See the swagger-ui page of any device for syntax.
 
-<img height="480" alt="api" style="border: 5px solid black;" src="https://github.com/user-attachments/assets/ee2269cb-0b6c-4e67-9b27-12a38fcb60e6" />
+<kbd><img height="480" alt="api" src="https://github.com/user-attachments/assets/ee2269cb-0b6c-4e67-9b27-12a38fcb60e6" /></kbd>
 
 **Scripts page** - Generates the Bosch camera alarm task scripts for ease of use.
 
@@ -168,11 +168,12 @@ The REST API supports integration with sensor systems through simple HTTP reques
 1. Fill out the table with the mappings of cameras and rules to detectors
 1. Paste accordingly into your camera's Alarm Task Editors
 
-<img height="480" alt="scripts" src="https://github.com/user-attachments/assets/7f5e185e-223d-43e1-aab4-1af646486d55" />
+<kbd><img height="480" alt="scripts" src="https://github.com/user-attachments/assets/7f5e185e-223d-43e1-aab4-1af646486d55" /></kbd>
 
 Mappings coorelate the VCA rule number of the camera to a detector number of the controller.
 
-<img width="1235" alt="mappings" src="https://github.com/user-attachments/assets/dc0dad7b-f46c-40ca-8c7d-655c6e1b3928" />
+<kbd><img width="731" height="569" alt="Detector_Rule_Mappings" src="https://github.com/user-attachments/assets/f778a3ff-5316-4092-bd20-47ed2a5a0148" /></kbd>
+
 
 ## Getting started checklist<a name="GettingStarted"></a>
 
