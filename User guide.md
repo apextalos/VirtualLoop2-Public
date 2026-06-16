@@ -36,9 +36,9 @@ The VirtualLoop serves as a translator for various detection technologies to be 
 
 ## Models<a name="Models"></a>
 
-### VIRTUALLOOP-2-RACK
+### VIRTUALLOOP-2-RACK (COMING SOON)
 
-BIU Rack card mounted (COMING SOON)
+BIU Rack card mounted
 
 **Power:** supplied by the BIU rack backplane at 12 VDC
 
@@ -56,7 +56,6 @@ DIN rail or shelf mounted
 
 **Relay Control (COMING SOON):** 8 ea of SPDT solid state relays (1 Form C)
 
-<img height="300" alt="DIN" src="" />
 
 ## Interfaces<a name="Interfaces"></a>
 
@@ -78,13 +77,28 @@ DIN rail or shelf mounted
 Tapping the button rotates the screen:
 
 1. --Network-- addressing (Static or DHCP)
+
+<img height="320" alt="oled_network" src="https://github.com/user-attachments/assets/8324125f-33c3-404b-b153-0fc0e6ee639e" />
+
 1. --About-- versions
+
+<img height="320" alt="oled_about" src="https://github.com/user-attachments/assets/c4c23240-7b1b-4f38-ba83-f51dd031c5b3" />
+
 1. --BIU #1-- Detectors 1-16
 1. --BIU #2-- Detectors 17-32
 1. --BIU #3-- Detectors 33-48
 1. --BIU #4-- Detectors 49-64
+
+<img height="320" alt="oled_biu" src="https://github.com/user-attachments/assets/9c8a2bb8-8125-4a4a-af18-227a871cea47" />
+
 1. --Load Switches-- 1-16
+
+<img height="320" alt="oled_loadswitches" src="https://github.com/user-attachments/assets/172dc32c-8b23-4bfb-b5d5-54945b044a14" />
+
 1. --Failsafe-- Sensor monitor
+
+<img height="320" alt="oled_failsafe" src="https://github.com/user-attachments/assets/52c74e19-ef57-4053-a3f1-f559614b033b" />
+
 1. --Relays-- 1-8
 
 ### SDLC
@@ -107,45 +121,45 @@ Holding the reset button for 5 seconds (or longer) and releasing will factory re
 
 **Login page** - Requires username and password to access the unit
 
-<img width="400" alt="Login" src="" />
+<img height="480" alt="login" src="https://github.com/user-attachments/assets/b605a9b7-e69b-4d07-9e78-8215b050b332" />
 
 **About page** - Reports version, internal voltage, device name, etc.
 
-<img width="400" alt="About" src="" />
+<img height="480" alt="about" src="https://github.com/user-attachments/assets/f2229208-ab4c-4959-9951-93211392ec33" />
 
 **Network page** - Used to set the device IP through either DHCP or Static addressing
 
-<img width="400" alt="Network" src="" />
+<img height="480" alt="network" src="https://github.com/user-attachments/assets/10bc5b5f-8d5c-4255-8b6c-dc676d00d21a" />
 
 **Time configuration page** - configure the time server address and check sync status
 
-<img width="400" alt="Time" src="" />
+<img height="480" alt="time" src="https://github.com/user-attachments/assets/e98ff891-b1ba-40dc-a5f9-4684384a6ef7" />
 
 **Detector selection page** - Allows the user to force a detector on or off through the UI.  Also reports the number of detector activation counts and provides the user a droplist of the load switch numbers for mapping in ATSPM data
 
-<img width="400" alt="Detectors" src="" />
+<img height="480" alt="detectors" src="https://github.com/user-attachments/assets/3f199a59-1876-4b64-8c1a-3bcfb813d9f2" />
 
 **Load switch status page** - Reports the current phase by identifying the color of the approaches
 
-<img width="400" alt="Load switch" src="" />
+<img height="480" alt="loadswitches" src="https://github.com/user-attachments/assets/31ff10bf-8d86-48fd-9db5-60331e23cba6" />
 
 **Failsafe monitoring page** - The device can monitor upto 4 IP address and ports.  Typically these would be the camera detection devices.  If the connection is not accepted within the specified number of seconds and failure counts, the VirtualLoop will go into FAILSAFE mode and automatically hold calls on all detectors.
 
-<img width="400" alt="Failsafe" src="" />
+<img height="480" alt="failsafe" src="https://github.com/user-attachments/assets/561cbeab-a28a-4bbf-8412-a7c82e2f694b" />
 
 **Log page** - View logging data
 
-<img width="400" alt="Log" src="" />
+<img height="480" alt="logs" src="https://github.com/user-attachments/assets/404e2b4d-42c0-4143-86d2-e7ff297f1d6c" />
 
 **Firmware page** - Remote upgrades
 
-<img width="400" alt="Firmware" src="" />
+<img height="480" alt="firmware" src="https://github.com/user-attachments/assets/21e4c385-f771-4217-9fea-7debd6284b93" />
 
 **API page** - Manage API tokens
 
 The REST API supports integration with sensor systems through simple HTTP requests.  See the swagger-ui page of any device for syntax.
 
-<img width="400" alt="API" src="" />
+<img height="480" alt="api" src="https://github.com/user-attachments/assets/ee2269cb-0b6c-4e67-9b27-12a38fcb60e6" />
 
 **Scripts page** - Generates the Bosch camera alarm task scripts for ease of use.
 
@@ -154,9 +168,9 @@ The REST API supports integration with sensor systems through simple HTTP reques
 1. Hit the "Generate" button and now you have each of the script blocks
 1. Paste accordingly into your camera's Alarm Task Editors
 
-<img width="1235" alt="mappings" src="https://github.com/user-attachments/assets/dc0dad7b-f46c-40ca-8c7d-655c6e1b3928" />
+<img height="480" alt="scripts" src="https://github.com/user-attachments/assets/7f5e185e-223d-43e1-aab4-1af646486d55" />
 
-<img width="400" alt="Scripts" src="" />
+<img width="1235" alt="mappings" src="https://github.com/user-attachments/assets/dc0dad7b-f46c-40ca-8c7d-655c6e1b3928" />
 
 ## Getting started checklist<a name="GettingStarted"></a>
 
