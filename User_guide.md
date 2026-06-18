@@ -46,6 +46,9 @@ The VirtualLoop serves as a translator for various detection technologies to be 
 
 **Relay Control:**  None
 
+<img width="600" alt="front" src="https://github.com/user-attachments/assets/d2948e91-a878-47a2-b3ba-2eb85a1d9fc0" />
+<img width="600" alt="back" src="https://github.com/user-attachments/assets/cc36b4e8-087b-44c8-83a2-e580cfff8e0b" />
+
 ### VIRTUALLOOP-2-DIN
 
 **Form:** DIN rail or shelf mounted
@@ -76,26 +79,26 @@ Tapping the button rotates the screen:
 
 1. --Network-- addressing (Static or DHCP)
 
-<img height="320" alt="oled_network" src="https://github.com/user-attachments/assets/8324125f-33c3-404b-b153-0fc0e6ee639e" />
+<img width="480" alt="oled_network" src="https://github.com/user-attachments/assets/5b5eb45f-0594-4993-9e25-b51eb9783722" />
 
 1. --About-- versions
-
-<img height="320" alt="oled_about" src="https://github.com/user-attachments/assets/c4c23240-7b1b-4f38-ba83-f51dd031c5b3" />
+ 
+<img width="480" alt="oled_about" src="https://github.com/user-attachments/assets/42ae0aca-b986-45c3-86d8-e6d6f468fbbb" />
 
 1. --BIU #1-- Detectors 1-16
 1. --BIU #2-- Detectors 17-32
 1. --BIU #3-- Detectors 33-48
 1. --BIU #4-- Detectors 49-64
 
-<img height="320" alt="oled_biu" src="https://github.com/user-attachments/assets/9c8a2bb8-8125-4a4a-af18-227a871cea47" />
+<img width="480" alt="oled_biu" src="https://github.com/user-attachments/assets/6d593c7b-7390-48f8-a712-f02995a43a64" />
 
 1. --Load Switches-- 1-16
 
-<img height="320" alt="oled_loadswitches" src="https://github.com/user-attachments/assets/172dc32c-8b23-4bfb-b5d5-54945b044a14" />
+<img width="480" alt="oled_loadswitches" src="https://github.com/user-attachments/assets/23aaa649-0bc3-4715-ba38-e968a2cf3273" />
 
 1. --Failsafe-- Sensor monitor
 
-<img height="320" alt="oled_failsafe" src="https://github.com/user-attachments/assets/52c74e19-ef57-4053-a3f1-f559614b033b" />
+<img width="480" alt="oled_failsafe" src="https://github.com/user-attachments/assets/e8020ba3-ccdf-477a-8998-03faab77eed4" />
 
 1. --Relays-- 1-8
 
@@ -172,7 +175,8 @@ The REST API supports integration with sensor systems through simple HTTP reques
 
 Mappings coorelate the VCA rule number of the camera to a detector number of the controller.
 
-<kbd><img width="731" height="569" alt="Detector_Rule_Mappings" src="https://github.com/user-attachments/assets/f778a3ff-5316-4092-bd20-47ed2a5a0148" /></kbd>
+<img width="1385" height="617" alt="mappings" src="https://github.com/user-attachments/assets/24324054-14ae-4cb7-870d-85eb5d194aef" />
+<img width="1060" height="610" alt="scripts_mapping" src="https://github.com/user-attachments/assets/02dd529e-a33e-40df-9daa-959085fbe181" />
 
 
 ## Getting started checklist<a name="GettingStarted"></a>
