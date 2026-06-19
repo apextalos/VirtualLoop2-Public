@@ -1,4 +1,4 @@
-# VirtualLoop User Guide
+# Apex Talos VirtualLoop<br>User Guide
 
 ## Table of Contents
 1. [Introduction](#Introduction)
