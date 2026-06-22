@@ -1,4 +1,4 @@
-# Apex Talos VirtualLoop<br>User Guide
+# Apex Talos VirtualLoop2<br>User Guide
 
 ## Table of Contents
 1. [Introduction](#Introduction)
@@ -19,20 +19,22 @@ The VirtualLoop serves as a translator for various detection technologies to be 
 
 ### Physical and Environmental Specification
 
+* Supply voltage: 12-24VDC or PoE
+* Power consumption: 3.2W operating (7.5W peak startup)
 * Temperature: -34C to +74C
 * Humidity:	95% non-condensing
-* Dimensions: 55 x 153 x 106mm
-* Weight: 18oz
-* Low power consumption: 1 Watt
+* Dimensions: 125 x 125 x 88 mm (4.9 x 4.9 x 3.5 in)
+* Weight: 719g (25oz)
 
 ### Technical Specification
 
-* Cortex-A76 (Armv8) 2.4GHz
-* 2Gb RAM
-* 128Gb Removable flash (microSD)
-* 2 × USB 3.0 ports, supporting simultaneous 5Gbps operation
-* Gigabit Ethernet with PoE 802.3af
-* IP addressing through DHCP and Static
+* CPU: Quad-core 64-bit ARM Cortex-A76 @ 2.4GHz
+* RAM: 2Gb DDR4
+* OS: Debian 13
+* Flash: 128Gb Removable microSDHC
+* USB: 2× 3.0 supporting simultaneous 5Gbps operation
+* Ethernet: Gigabit with PoE 802.3af
+* IPv4: DHCP and Static
 
 ## Models<a name="Models"></a>
 
@@ -46,18 +48,18 @@ The VirtualLoop serves as a translator for various detection technologies to be 
 
 **Relay Control:**  None
 
-<img width="600" alt="front" src="https://github.com/user-attachments/assets/d2948e91-a878-47a2-b3ba-2eb85a1d9fc0" />
-<img width="600" alt="back" src="https://github.com/user-attachments/assets/cc36b4e8-087b-44c8-83a2-e580cfff8e0b" />
-
 ### VIRTUALLOOP-2-DIN
 
 **Form:** DIN rail or shelf mounted
 
-**Power:** supplied either by nominal 12-24VDC on the front (2 pos green connector), or Ethernet (RJ45) PoE 802.3af (consumes only ~1w)
+**Power:** supplied either by nominal 12-24VDC on the front (2 pos green connector), or Ethernet (RJ45) PoE 802.3af
 
-**Mounting:** Din or shelf 122mm (5") wide x 123mm (5") deep x 88mm (3.5") tall
+**Mounting:** Din or shelf 125 x 125 x 88 mm (4.9 x 4.9 x 3.5 in)
 
 **Relay Control (COMING SOON):** 8 ea of SPDT solid state relays (1 Form C)
+
+<img width="400" alt="front" src="https://github.com/user-attachments/assets/d2948e91-a878-47a2-b3ba-2eb85a1d9fc0" />
+<img width="400" alt="back" src="https://github.com/user-attachments/assets/cc36b4e8-087b-44c8-83a2-e580cfff8e0b" />
 
 ## Interfaces<a name="Interfaces"></a>
 
@@ -75,30 +77,30 @@ The VirtualLoop serves as a translator for various detection technologies to be 
 
 ### OLED Screen
 
-Tapping the button rotates the screen:
+Tapping the Display button rotates the screen:
 
 1. --Network-- addressing (Static or DHCP)
 
-<img width="480" alt="oled_network" src="https://github.com/user-attachments/assets/5b5eb45f-0594-4993-9e25-b51eb9783722" />
+<kbd><img width="400" alt="oled_network" src="https://github.com/user-attachments/assets/5b5eb45f-0594-4993-9e25-b51eb9783722" /></kbd>
 
 1. --About-- versions
  
-<img width="480" alt="oled_about" src="https://github.com/user-attachments/assets/42ae0aca-b986-45c3-86d8-e6d6f468fbbb" />
+<kbd><img width="400" alt="oled_about" src="https://github.com/user-attachments/assets/42ae0aca-b986-45c3-86d8-e6d6f468fbbb" /></kbd>
 
 1. --BIU #1-- Detectors 1-16
 1. --BIU #2-- Detectors 17-32
 1. --BIU #3-- Detectors 33-48
 1. --BIU #4-- Detectors 49-64
 
-<img width="480" alt="oled_biu" src="https://github.com/user-attachments/assets/6d593c7b-7390-48f8-a712-f02995a43a64" />
+<kbd><img width="400" alt="oled_biu" src="https://github.com/user-attachments/assets/6d593c7b-7390-48f8-a712-f02995a43a64" /></kbd>
 
 1. --Load Switches-- 1-16
 
-<img width="480" alt="oled_loadswitches" src="https://github.com/user-attachments/assets/23aaa649-0bc3-4715-ba38-e968a2cf3273" />
+<kbd><img width="400" alt="oled_loadswitches" src="https://github.com/user-attachments/assets/23aaa649-0bc3-4715-ba38-e968a2cf3273" /></kbd>
 
 1. --Failsafe-- Sensor monitor
 
-<img width="480" alt="oled_failsafe" src="https://github.com/user-attachments/assets/e8020ba3-ccdf-477a-8998-03faab77eed4" />
+<kbd><img width="400" alt="oled_failsafe" src="https://github.com/user-attachments/assets/e8020ba3-ccdf-477a-8998-03faab77eed4" /></kbd>
 
 1. --Relays-- 1-8
 
@@ -124,45 +126,45 @@ Holding the reset button for 5 seconds (or longer) and releasing will factory re
 
 **Login page** - Requires username and password to access the unit.  Login with "user" and "V1rtualL00p!"
 
-<kbd><img height="480" alt="login" src="https://github.com/user-attachments/assets/b605a9b7-e69b-4d07-9e78-8215b050b332" /></kbd>
+<kbd><img height="480" alt="login" style="border: 5px solid black;" src="https://github.com/user-attachments/assets/b605a9b7-e69b-4d07-9e78-8215b050b332" /></kbd>
 
 **About page** - Reports location name, status, version, etc.
 
-<kbd><img height="480" alt="about" src="https://github.com/user-attachments/assets/f2229208-ab4c-4959-9951-93211392ec33" /></kbd>
+<kbd><img height="480" alt="about" style="border: 5px solid black;" src="https://github.com/user-attachments/assets/f2229208-ab4c-4959-9951-93211392ec33" /></kbd>
 
 **Network page** - Used to set the device IP through either "auto" (DHCP) or "static" addressing
 
-<kbd><img height="480" alt="network" src="https://github.com/user-attachments/assets/10bc5b5f-8d5c-4255-8b6c-dc676d00d21a" /></kbd>
+<kbd><img height="480" alt="network" style="border: 5px solid black;" src="https://github.com/user-attachments/assets/10bc5b5f-8d5c-4255-8b6c-dc676d00d21a" /></kbd>
 
 **Time configuration page** - configure the time server address and check sync status
 
-<kbd><img height="480" alt="time" src="https://github.com/user-attachments/assets/e98ff891-b1ba-40dc-a5f9-4684384a6ef7" /></kbd>
+<kbd><img height="480" alt="time" style="border: 5px solid black;" src="https://github.com/user-attachments/assets/e98ff891-b1ba-40dc-a5f9-4684384a6ef7" /></kbd>
 
 **Detector page** - Allows the user to force a detector on or off through the UI.  Also reports the number of detector activation counts.
 
-<kbd><img height="480" alt="detectors" src="https://github.com/user-attachments/assets/3f199a59-1876-4b64-8c1a-3bcfb813d9f2" /></kbd>
+<kbd><img height="480" alt="detectors" style="border: 5px solid black;" src="https://github.com/user-attachments/assets/3f199a59-1876-4b64-8c1a-3bcfb813d9f2" /></kbd>
 
 **Load Switches page** - Reports the current phase by identifying the color of the approaches
 
-<kbd><img height="480" alt="loadswitches" src="https://github.com/user-attachments/assets/31ff10bf-8d86-48fd-9db5-60331e23cba6" /></kbd>
+<kbd><img height="480" alt="loadswitches" style="border: 5px solid black;" src="https://github.com/user-attachments/assets/31ff10bf-8d86-48fd-9db5-60331e23cba6" /></kbd>
 
 **Failsafe page** - The device can monitor upto 4 IP address and ports.  Typically these would be the camera detection devices.  If the connection is not accepted within the specified number of seconds and failure counts, the VirtualLoop will go into FAILSAFE mode and automatically hold calls on all detectors.
 
-<kbd><img height="480" alt="failsafe" src="https://github.com/user-attachments/assets/561cbeab-a28a-4bbf-8412-a7c82e2f694b" /></kbd>
+<kbd><img height="480" alt="failsafe" style="border: 5px solid black;" src="https://github.com/user-attachments/assets/561cbeab-a28a-4bbf-8412-a7c82e2f694b" /></kbd>
 
 **Logs page** - View logging data
 
-<kbd><img height="480" alt="logs" src="https://github.com/user-attachments/assets/404e2b4d-42c0-4143-86d2-e7ff297f1d6c" /></kbd>
+<kbd><img height="480" alt="logs" style="border: 5px solid black;" src="https://github.com/user-attachments/assets/404e2b4d-42c0-4143-86d2-e7ff297f1d6c" /></kbd>
 
 **Firmware page** - Remote upgrades
 
-<kbd><img height="480" alt="firmware" src="https://github.com/user-attachments/assets/21e4c385-f771-4217-9fea-7debd6284b93" /></kbd>
+<kbd><img height="480" alt="firmware" style="border: 5px solid black;" src="https://github.com/user-attachments/assets/21e4c385-f771-4217-9fea-7debd6284b93" /></kbd>
 
 **API page** - Manage API tokens
 
 The REST API supports integration with sensor systems through simple HTTP requests.  See the swagger-ui page of any device for syntax.
 
-<kbd><img height="480" alt="api" src="https://github.com/user-attachments/assets/ee2269cb-0b6c-4e67-9b27-12a38fcb60e6" /></kbd>
+<kbd><img height="480" alt="api" style="border: 5px solid black;" src="https://github.com/user-attachments/assets/ee2269cb-0b6c-4e67-9b27-12a38fcb60e6" /></kbd>
 
 **Scripts page** - Generates the Bosch camera alarm task scripts for ease of use.
 
@@ -171,12 +173,12 @@ The REST API supports integration with sensor systems through simple HTTP reques
 1. Fill out the table with the mappings of cameras and rules to detectors
 1. Paste accordingly into your camera's Alarm Task Editors
 
-<kbd><img height="480" alt="scripts" src="https://github.com/user-attachments/assets/7f5e185e-223d-43e1-aab4-1af646486d55" /></kbd>
+<kbd><img height="480" alt="scripts" style="border: 5px solid black;" src="https://github.com/user-attachments/assets/7f5e185e-223d-43e1-aab4-1af646486d55" /></kbd>
 
 Mappings coorelate the VCA rule number of the camera to a detector number of the controller.
 
-<img width="1385" height="617" alt="mappings" src="https://github.com/user-attachments/assets/24324054-14ae-4cb7-870d-85eb5d194aef" />
-<img width="1060" height="610" alt="scripts_mapping" src="https://github.com/user-attachments/assets/02dd529e-a33e-40df-9daa-959085fbe181" />
+<kbd><img width="800" style="border: 5px solid black;" alt="mappings" src="https://github.com/user-attachments/assets/24324054-14ae-4cb7-870d-85eb5d194aef" /></kbd>
+<kbd><img width="800" style="border: 5px solid black;" alt="scripts_mapping" src="https://github.com/user-attachments/assets/02dd529e-a33e-40df-9daa-959085fbe181" /></kbd>
 
 
 ## Getting started checklist<a name="GettingStarted"></a>
