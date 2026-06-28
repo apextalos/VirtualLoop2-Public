@@ -1,4 +1,6 @@
-# VirtualLoop device and software documentation
+# VirtualLoop device support
+
+## Documentation
 
 [User guide (pdf)](https://github.com/apextalos/VirtualLoop2-Public/blob/main/User_guide.pdf)
 
@@ -8,10 +10,10 @@
 
 [Quick start guide](https://github.com/apextalos/VirtualLoop2-Public/blob/main/Quick_start_guide_4.25x5.5.pdf)
 
-*Note: Converted with VS Code Markdown to PDF plugin*
+##### *Note: Converted with VS Code Markdown to PDF plugin*
 
 
-Upgrades from VirtualLoop1
+## Upgrades from VirtualLoop v1
 - Firmware is now remotely upgradable through the WebUI
 - Live updates in the WebUI, no more having to refresh the pages to see detector calls or load switches
 - More secure and robust API with faster response times
