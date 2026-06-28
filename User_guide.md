@@ -66,6 +66,8 @@ The VirtualLoop serves as a translator for various detection technologies to be 
 
 The unit can be powered by either 12-24VDC or 54V PoE
 
+<img height="240" alt="power" src="https://github.com/user-attachments/assets/04904a0a-b354-4ee7-970a-b523a97ae0bc" />
+
 
 ## Interfaces<a name="Interfaces"></a>
 
