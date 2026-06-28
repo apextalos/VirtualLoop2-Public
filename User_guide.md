@@ -3,6 +3,7 @@
 ## Table of Contents
 1. [Introduction](#Introduction)
 1. [Models](#Models)
+1. [Power](#Power)
 1. [Interfaces](#Interfaces)
 1. [Factory reset](#FactoryReset)
 1. [Web Server](#WebServer)
@@ -60,6 +61,11 @@ The VirtualLoop serves as a translator for various detection technologies to be 
 
 <img width="400" alt="front" src="https://github.com/user-attachments/assets/d2948e91-a878-47a2-b3ba-2eb85a1d9fc0" />
 <img width="400" alt="back" src="https://github.com/user-attachments/assets/cc36b4e8-087b-44c8-83a2-e580cfff8e0b" />
+
+## Power<a name="Power"></a>
+
+The unit can be powered by either 12-24VDC or 54V PoE
+
 
 ## Interfaces<a name="Interfaces"></a>
 
