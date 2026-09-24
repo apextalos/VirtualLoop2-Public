@@ -4,14 +4,19 @@
 
 [User guide (pdf)](https://github.com/apextalos/VirtualLoop2-Public/blob/main/User_guide.pdf)
 
-[User guide (markdown web)](https://github.com/apextalos/VirtualLoop2-Public/blob/main/User_guide.md)
-
-[Datasheet](https://github.com/apextalos/VirtualLoop2-Public/blob/main/Datasheet.pdf)
-
-[Quick start guide](https://github.com/apextalos/VirtualLoop2-Public/blob/main/Quick_start_guide_4.25x5.5.pdf)
-
 ##### *Note: Converted with VS Code Markdown to PDF plugin*
 
+[User guide (markdown web)](https://github.com/apextalos/VirtualLoop2-Public/blob/main/User_guide.md)
+
+[Datasheet (pdf)](https://github.com/apextalos/VirtualLoop2-Public/blob/main/Datasheet.pdf)
+
+[Quick start card (pdf)](https://github.com/apextalos/VirtualLoop2-Public/blob/main/Quick_start_guide_4.25x5.5.pdf)
+
+## Bosch Camera Assistance
+
+[Configuration Notes (pdf)](https://github.com/apextalos/VirtualLoop2-Public/blob/main/Camera_Configuration_for_Stop_Bar_Detection.pdf)
+
+[Pixel Density Guide (pdf)](https://github.com/apextalos/VirtualLoop2-Public/blob/main/ITS_Pixel_Density_One_Page.pdf)
 
 ## Upgrades from VirtualLoop v1
 - Firmware is now remotely upgradable through the WebUI
